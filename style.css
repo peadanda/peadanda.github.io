@@ -154,16 +154,18 @@ Information 영역 - sns 링크, 주소, 회사 로고
 
 /* 모바일 CSS */
 
-
+.m-background img {
+    width: 100%;
+}
 
 
 /* 반응형 웹 구현을 위한 미디어 쿼리 */
 
 @media screen and (max-width: 1024px) {
-    #desktop {
+    .desktop {
         display: none;
     }
-    #mobile {
+    .mobile {
         display: block;
     }
 }

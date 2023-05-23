@@ -37,11 +37,13 @@ header 영역 - 로고, 메인메뉴
 }
 
 .company {
+    flex-wrap: nowrap;
     font-size: 16px;
     margin: 55px 40px 40px 70px; /* 위 오른쪽 밑 왼쪽 */
 }
 
 .game {
+    flex-wrap: nowrap;
     font-size: 16px;
     margin: 55px 30px 40px 40px;
 }
@@ -51,11 +53,13 @@ header 영역 - 로고, 메인메뉴
 }
 
 .character {
+    flex-wrap: nowrap;
     font-size: 16px;
     margin: 55px 70px 40px 30px;
 }
 
 .notice {
+    flex-wrap: nowrap;
     font-size: 16px;
     margin: 55px 70px 40px 40px;
 }
@@ -95,7 +99,7 @@ main 영역 - 회사 정보들
 
 .on {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .left {
@@ -133,7 +137,7 @@ main 영역 - 회사 정보들
 }
 
 .Dev_ex {
-    display: flex;
+    display: block;
     color: aliceblue;
     font-size: 18px;
     margin-top: 10px;
@@ -271,4 +275,23 @@ Information 영역 - sns 링크, 주소, 회사 로고
 
 .E_comp {
     margin-top: 20px;
+}
+
+
+/* 모바일 CSS */
+
+.m-background img {
+    width: 100%;
+}
+
+
+/* 반응형 웹 구현을 위한 미디어 쿼리 */
+
+@media screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }
