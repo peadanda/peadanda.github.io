@@ -28,7 +28,7 @@ header 영역 - 로고, 메인메뉴
     justify-content: space-around;
     color: aliceblue;
     font-family: 'CookieRun-Regular';
-    top: 45px;
+    top: 55px;
     left: 0;
     width: 100%;
     font-size: 18px;
@@ -37,11 +37,13 @@ header 영역 - 로고, 메인메뉴
 }
 
 .company {
-    margin: 100px 40px 40px 70px; /* 위 오른쪽 밑 왼쪽 */
+    font-size: 16px;
+    margin: 55px 40px 40px 70px; /* 위 오른쪽 밑 왼쪽 */
 }
 
 .game {
-    margin: 100px 30px 40px 40px;
+    font-size: 16px;
+    margin: 55px 30px 40px 40px;
 }
 
 .iogo {
@@ -49,11 +51,13 @@ header 영역 - 로고, 메인메뉴
 }
 
 .character {
-    margin: 100px 70px 40px 30px;
+    font-size: 16px;
+    margin: 55px 70px 40px 30px;
 }
 
 .notice {
-    margin: 100px 70px 40px 40px;
+    font-size: 16px;
+    margin: 55px 70px 40px 40px;
 }
 
 .title a {
@@ -102,7 +106,7 @@ main 영역 - 회사 정보들
 
 .comp {
     color: aliceblue;
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 10px 10px 50px;
 }
 
@@ -122,7 +126,7 @@ main 영역 - 회사 정보들
 .Dev {
     display: flex;
     color: aliceblue;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 50px;
     margin-left: 160px;
     margin-bottom: 20px;
@@ -131,7 +135,7 @@ main 영역 - 회사 정보들
 .Dev_ex {
     display: flex;
     color: aliceblue;
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -143,17 +147,17 @@ main 영역 - 회사 정보들
 
 .oven {
     display: flex;
-    margin: 0 30px 50px 30px;
+    margin: 0 20px 50px 20px;
 }
 
 .corun {
     display: flex;
-    margin: 0 30px 50px 30px;
+    margin: 0 20px 50px 20px;
 }
 
 .puzzle {
     display: flex;
-    margin: 0 30px 50px 30px;
+    margin: 0 20px 50px 20px;
 }
 
 
@@ -167,7 +171,7 @@ main 영역 - 회사 정보들
     display: flex;
     justify-content: center;
     color: aliceblue;
-    font-size: 38px;
+    font-size: 30px;
     margin: 30px 0 30px 0;
 }
 
@@ -181,14 +185,14 @@ main 영역 - 회사 정보들
 .c2007-2014 {
     display: flex;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 18px;
     margin: 30px 50px 0 50px;
 }
 
 .c2015-2022 {
     display: flex;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 18px;
     margin: 30px 0 0 50px;
 }
 
@@ -202,9 +206,9 @@ Information 영역 - sns 링크, 주소, 회사 로고
     /* top: 100px; */
     left: 0;
     width: 100%;
-    height: 470px;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     background-color: #191c24;
 }
 
@@ -219,34 +223,34 @@ Information 영역 - sns 링크, 주소, 회사 로고
 
 .sns {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .youtube {
-    margin: 0 40px 40px 40px;
+    margin: 0 30px 40px 30px;
 }
 
 .twitter{
-    margin: 0 40px 40px 40px;
+    margin: 0 30px 40px 30px;
 }
 
 .facebook{
-    margin: 0 40px 40px 40px;
+    margin: 0 30px 40px 30px;
 }
 
 .cafe{
-    margin: 0 40px 40px 40px;
+    margin: 0 30px 40px 30px;
 }
 
 .add {
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .number {
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 18px;
     display: flex;
     margin-bottom: 10px;
 }
@@ -261,10 +265,10 @@ Information 영역 - sns 링크, 주소, 회사 로고
 
 .en {
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .E_comp {
-    margin-top: 40px;
+    margin-top: 20px;
 }

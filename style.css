@@ -22,6 +22,9 @@ body{
     width: 100%;
 }
 
+
+/* 데스크탑 CSS */
+
 /* -----------------------------------------------------------------------
 header 영역 - 로고, 메인메뉴
 ----------------------------------------------------------------------- */
@@ -41,11 +44,13 @@ header 영역 - 로고, 메인메뉴
 }
 
 .company {
-    margin: 100px 40px 40px 70px; /* 위 오른쪽 밑 왼쪽 */
+    font-size: 16px;
+    margin: 55px 40px 40px 70px; /* 위 오른쪽 밑 왼쪽 */
 }
 
 .game {
-    margin: 100px 30px 40px 40px;
+    font-size: 16px;
+    margin: 55px 30px 40px 40px;
 }
 
 .iogo {
@@ -53,11 +58,13 @@ header 영역 - 로고, 메인메뉴
 }
 
 .character {
-    margin: 100px 70px 40px 30px;
+    font-size: 16px;
+    margin: 55px 70px 40px 30px;
 }
 
 .notice {
-    margin: 100px 70px 40px 40px;
+    font-size: 16px;
+    margin: 55px 70px 40px 40px;
 }
 
 .title a {
@@ -78,9 +85,9 @@ Information 영역 - sns 링크, 주소, 회사 로고
     position: relative;
     left: 0;
     width: 100%;
-    height: 470px;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     background-color: #191c24;
 }
 
@@ -95,34 +102,34 @@ Information 영역 - sns 링크, 주소, 회사 로고
 
 .sns {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .youtube {
-    margin: 0 40px 40px 40px;
+    margin: 0 30px 40px 30px;
 }
 
 .twitter{
-    margin: 0 40px 40px 40px;
+    margin: 0 30px 40px 30px;
 }
 
 .facebook{
-    margin: 0 40px 40px 40px;
+    margin: 0 30px 40px 30px;
 }
 
 .cafe{
-    margin: 0 40px 40px 40px;
+    margin: 0 30px 40px 30px;
 }
 
 .add {
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .number {
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 18px;
     display: flex;
     margin-bottom: 10px;
 }
@@ -137,10 +144,26 @@ Information 영역 - sns 링크, 주소, 회사 로고
 
 .en {
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .E_comp {
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+/* 모바일 CSS */
+
+
+
+
+/* 반응형 웹 구현을 위한 미디어 쿼리 */
+
+@media screen and (max-width: 1024px) {
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
 }
