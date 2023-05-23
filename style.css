@@ -15,6 +15,10 @@ body{
     /*background-image: url("background.png");*/
 }
 
+.mobile {
+    display: none;
+}
+
 .background {
     width: 100%;
 }
