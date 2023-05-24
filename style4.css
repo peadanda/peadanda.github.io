@@ -1,0 +1,306 @@
+* { /* 모든 HTML 태그에 적용하는 스타일 */
+    
+    margin: 0; padding: 0; 
+}
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #2e2012;
+}
+
+.mobile {
+    display: none;
+}
+
+/* -----------------------------------------------------------------------
+header 영역 - 로고, 메인메뉴
+----------------------------------------------------------------------- */
+
+.header img {
+    width: 100%;
+}
+
+.title {
+    display: inline-flex;
+    position: absolute;
+    justify-content: space-around;
+    color: aliceblue;
+    font-family: 'CookieRun-Regular';
+    top: 55px;
+    left: 0;
+    width: 100%;
+    font-size: 18px;
+    height: 100px;
+    /* background-color: rgb(255, 0, 217); */
+}
+
+.company {
+    flex-wrap: nowrap;
+    font-size: 16px;
+    margin: 55px 40px 40px 70px; /* 위 오른쪽 밑 왼쪽 */
+}
+
+.game {
+    flex-wrap: nowrap;
+    font-size: 16px;
+    margin: 55px 30px 40px 40px;
+}
+
+.iogo {
+    margin: 0 30px 40px 30px;
+}
+
+.character {
+    flex-wrap: nowrap;
+    font-size: 16px;
+    margin: 55px 70px 40px 30px;
+}
+
+.notice {
+    flex-wrap: nowrap;
+    font-size: 16px;
+    margin: 55px 70px 40px 40px;
+}
+
+.title a {
+    color: aliceblue;
+}
+.title a:link {
+    text-decoration: none;
+}
+.title a:hover {
+    color: rgb(255, 225, 27);
+}
+
+/* -----------------------------------------------------------------------
+main 영역 - 회사 정보들
+----------------------------------------------------------------------- */
+
+.a1 img {
+    width: 100%;
+}
+
+
+.mid {
+    position: relative;
+    /* top: 285px; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.mid-into {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+
+.on {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 80px;
+}
+
+.comp {
+    color: aliceblue;
+    font-size: 20px;
+    margin: 10px 10px 10px 50px;
+}
+
+.Dev_kingdom {
+    top: 586px;
+    left: 75px;
+    margin: 10px 10px 10px 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 80px;
+}
+
+.Dev {
+    display: flex;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 160px;
+    margin-bottom: 20px;
+}
+
+.Dev_ex {
+    display: block;
+    color: aliceblue;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.E_game {
+	display: flex;
+    margin-top: 20px;
+}
+
+.oven {
+    display: flex;
+    margin: 0 20px 50px 20px;
+}
+
+.corun {
+    display: flex;
+    margin: 0 20px 50px 20px;
+}
+
+.puzzle {
+    display: flex;
+    margin: 0 20px 50px 20px;
+}
+
+
+.last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.w {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 30px;
+    margin: 30px 0 30px 0;
+}
+
+.year {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.c2007-2014 {
+    display: flex;
+    color: aliceblue;
+    font-size: 18px;
+    margin: 30px 50px 0 50px;
+}
+
+.c2015-2022 {
+    display: flex;
+    color: aliceblue;
+    font-size: 18px;
+    margin: 30px 0 0 50px;
+}
+
+/* -----------------------------------------------------------------------
+Information 영역 - sns 링크, 주소, 회사 로고
+----------------------------------------------------------------------- */
+
+.infor {
+    position: relative;
+    align-items: center;
+    /* top: 100px; */
+    left: 0;
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #191c24;
+}
+
+.infor-into {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+
+.sns {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.youtube {
+    margin: 0 30px 40px 30px;
+}
+
+.twitter{
+    margin: 0 30px 40px 30px;
+}
+
+.facebook{
+    margin: 0 30px 40px 30px;
+}
+
+.cafe{
+    margin: 0 30px 40px 30px;
+}
+
+.add {
+    color: aliceblue;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.number {
+    color: aliceblue;
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.call {
+    margin-right: 10px;
+}
+
+.fax {
+    margin-left: 10px;
+}
+
+.en {
+    color: aliceblue;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.E_comp {
+    margin-top: 20px;
+}
+
+
+/* 모바일 CSS */
+
+.m-background img {
+    width: 100%;
+}
+
+
+/* 반응형 웹 구현을 위한 미디어 쿼리 */
+
+@media screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
