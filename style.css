@@ -36,7 +36,7 @@ header 영역 - 로고, 메인메뉴
 .title {
     display: inline-flex;
     position: absolute;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: aliceblue;
     font-family: 'CookieRun-Regular';
     top: 55px;
@@ -48,27 +48,32 @@ header 영역 - 로고, 메인메뉴
 }
 
 .company {
+    flex-wrap: nowrap;
     font-size: 16px;
-    margin: 55px 40px 40px 70px; /* 위 오른쪽 밑 왼쪽 */
+    margin-top: 55px;
 }
 
 .game {
+    flex-wrap: nowrap;
     font-size: 16px;
-    margin: 55px 30px 40px 40px;
+    margin-top: 55px;    
 }
 
 .iogo {
-    margin: 0 30px 40px 30px;
+    flex-wrap: nowrap;
+    /*margin: 0 30px 40px 30px;*/
 }
 
 .character {
+    flex-wrap: nowrap;
     font-size: 16px;
-    margin: 55px 70px 40px 30px;
+    margin-top: 55px;
 }
 
 .notice {
+    flex-wrap: nowrap;
     font-size: 16px;
-    margin: 55px 70px 40px 40px;
+    margin-top: 55px;
 }
 
 .title a {
