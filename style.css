@@ -161,16 +161,67 @@ Information 영역 - sns 링크, 주소, 회사 로고
     margin-top: 20px;
 }
 
-/* 모바일 CSS */
+/* -----------------------------------
+                모바일 CSS
+-------------------------------------- */
 
 .m-background img {
     width: 100%;
 }
 
+/* -----------------------------------------------------------------------
+mobile header 영역 - 로고, 메인메뉴
+----------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------
+mobile Information 영역 - sns 링크, 주소, 회사 로고
+----------------------------------------------------------------------- */
+
+.M-infor {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    padding-top: 10%;
+    padding-bottom: 50px;
+}
+
+.M-infor-into {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.M-sns {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.M-sns img {
+    width: 180%;
+}
+
+.M-youtube {
+    margin: 0 10% 0 0;
+}
+
+.M-twitter{
+    margin: 0 10% 0 10%;
+}
+
+.M-facebook{
+    margin: 0 10% 0 10%;
+}
+
+.M-cafe{
+    margin: 0 0 0 10%;
+}
 
 /* 반응형 웹 구현을 위한 미디어 쿼리 */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 960px) {
     .desktop {
         display: none;
     }
