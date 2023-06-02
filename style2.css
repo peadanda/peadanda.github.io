@@ -32,41 +32,41 @@ header 영역 - 로고, 메인메뉴
     justify-content: space-evenly;
     color: aliceblue;
     font-family: 'CookieRun-Regular';
-    top: 55px;
+    top: 8%;
     left: 0;
     width: 100%;
-    font-size: 18px;
     height: 100px;
     /* background-color: rgb(255, 0, 217); */
 }
 
-.company {
-    flex-wrap: nowrap;
-    font-size: 16px;
-    margin-top: 55px;
-}
-
 .game {
     flex-wrap: nowrap;
-    font-size: 16px;
-    margin-top: 55px;    
-}
-
-.iogo {
-    flex-wrap: nowrap;
-    /*margin: 0 30px 40px 30px;*/
+    font-size: 15px;
+    margin-top: 5%;    
 }
 
 .character {
     flex-wrap: nowrap;
-    font-size: 16px;
-    margin-top: 55px;
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+.iogo {
+    flex-wrap: nowrap;
+    width: 16%;
+    /*margin: 0 30px 40px 30px;*/
 }
 
 .notice {
     flex-wrap: nowrap;
-    font-size: 16px;
-    margin-top: 55px;
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+.company {
+    flex-wrap: nowrap;
+    font-size: 15px;
+    margin-top: 5%;
 }
 
 .title a {
@@ -105,6 +105,7 @@ main 영역 - 회사 정보들
 .on {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .left {
@@ -137,7 +138,7 @@ main 영역 - 회사 정보들
     color: aliceblue;
     font-size: 20px;
     margin-top: 50px;
-    margin-left: 160px;
+    margin-left: 20%;
     margin-bottom: 20px;
 }
 
@@ -174,35 +175,36 @@ main 영역 - 회사 정보들
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .w {
     display: flex;
     justify-content: center;
     color: aliceblue;
-    font-size: 30px;
+    font-size: 1.8em;
     margin: 30px 0 30px 0;
 }
 
 .year {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    margin-top: 2%;
 }
 
 .c2007-2014 {
     display: flex;
     color: aliceblue;
-    font-size: 18px;
-    margin: 30px 50px 0 50px;
+    font-size: 1em;
+    margin-right: 5%;
 }
 
 .c2015-2022 {
     display: flex;
     color: aliceblue;
-    font-size: 18px;
-    margin: 30px 0 0 50px;
+    font-size: 1em;
 }
 
 /* -----------------------------------------------------------------------
@@ -292,7 +294,7 @@ Information 영역 - sns 링크, 주소, 회사 로고
 
 /* 반응형 웹 구현을 위한 미디어 쿼리 */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 960px) {
     .desktop {
         display: none;
     }
