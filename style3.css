@@ -10,8 +10,13 @@
     font-style: normal;
 }
 
+:root {
+    --primary-color: #ffe11b;
+    --primary-bg-color: #000000;
+}
+
 body{
-    background-color: #2e2012;
+    background-color: #191c24;
 }
 
 .mobile {
@@ -90,6 +95,7 @@ main 영역 - 회사 정보들
     height: 100%;
     padding-top: 50px;
     padding-bottom: 100px;
+    background-color: #2e2012;
 }
 
 .mid-into {
@@ -112,30 +118,33 @@ main 영역 - 회사 정보들
     width: 50%;
     margin-bottom: 20px;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
 .parent-box {
+    border-radius: 50px;
     position: relative;
     padding: 20px 30px 20 30px;
-    border: solid 3px #FFC9A0;
+    border: solid 4px #FFC9A0;
+    padding: 1.5% 5% 1.5% 5%;
 }
 
 .cookie {
     color: #FFC9A0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .ador {
     color: #FFC9A0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .adve {
     color: #FFC9A0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .second2 {
@@ -148,12 +157,12 @@ main 영역 - 회사 정보들
 
 .battle {
     color: #FFC9A0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .guild {
     color: #FFC9A0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .third {
@@ -245,11 +254,359 @@ Information 영역 - sns 링크, 주소, 회사 로고
     margin-top: 20px;
 }
 
+/* -----------------------------------
+                모바일 CSS
+-------------------------------------- */
 
-/* 모바일 CSS */
+/* -----------------------------------------------------------------------
+mobile header 영역 - 로고, 메인메뉴
+----------------------------------------------------------------------- */
 
-.m-background img {
+.M-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 1000;
+}
+
+.menu-btn{
+    position: absolute;
+    z-index: 2000;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 30%;
+    width: 40%;
+    border-bottom: 2px solid #ffffff;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btn:before{
+    transform: translateY(-8px);
+}
+.menu-btn:after{
+    transform: translateY(8px);
+}
+
+.close {
+    z-index: 1;
     width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: background .6s;
+}
+  
+#active:checked + .menu-btn span {
+    transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+    transform: rotate(45deg);
+    border-color: #fff;
+}
+#active:checked + .menu-btn:after {
+    transform: rotate(-45deg);
+    border-color: #fff;
+}
+
+.M-title{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background: var(--primary-bg-color);
+    transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .M-title{
+    right:0;
+}
+
+#active:checked + .menu-btn span {
+	transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+	transform: rotate(45deg);
+    border-color: #ffffff;
+}
+#active:checked + .menu-btn:after {
+	transform: rotate(-45deg);
+    border-color: #ffffff;
+}
+
+.M-title ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    padding-top: 80px;
+    list-style: none;
+    text-align: center;
+}
+.M-title ul li{
+    width: 200px;
+    height: 60px;
+}
+.M-title ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+}
+.M-title ul li a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background: var(--primary-bg-color);
+    transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+    right:0;
+}
+
+#active:checked + .menu-btn span {
+	transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+	transform: rotate(45deg);
+    border-color: #ffffff;
+}
+#active:checked + .menu-btn:after {
+	transform: rotate(-45deg);
+    border-color: #ffffff;
+}
+
+.wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    padding-top: 80px;
+    list-style: none;
+    text-align: center;
+}
+.wrapper ul li{
+    width: 200px;
+    height: 60px;
+}
+.wrapper ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+}
+.wrapper ul li a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.M-logo{
+    width: 100%;
+    margin: 5% 0;
+    position: relative;
+    text-align: center;
+}
+
+.M-logo img{
+    width: 20%;
+}
+
+/* -----------------------------------------------------------------------
+mobile main 영역 - 정보들
+----------------------------------------------------------------------- */
+
+.M-mid {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30%;
+    padding-bottom: 100px;
+    background-color: #2e2012;
+}
+
+.M-mid-into {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.M-First{
+    color: aliceblue;
+    margin-bottom: 5%;
+}
+
+.M-second {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-bottom: 20px;
+    color: #FFC9A0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.M-parent-box {
+    border-radius: 50px;
+    position: relative;
+    border: solid 3px #FFC9A0;
+    padding: 1.5% 5% 1.5% 5%;
+    margin: 0 3% 0 3%;
+}
+
+.M-cookie{
+    text-align: center;
+    font-size: 1em;
+    width: 50px;
+}
+
+.M-ador{
+    text-align: center;
+    width: 50px;
+}
+
+.M-adve{
+    text-align: center;
+    width: 50px;
+}
+
+.M-battle{
+    text-align: center;
+    width: 50px;
+}
+
+.M-guild{
+    text-align: center;
+    width: 50px;
+}
+
+.M-third {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.M-third img{
+    width: 80%;
+}
+
+/* -----------------------------------------------------------------------
+mobile Information 영역 - sns 링크, 주소, 회사 로고
+----------------------------------------------------------------------- */
+
+.M-infor {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    padding-top: 10%;
+    
+}
+
+.M-infor-into {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.M-sns {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.M-sns img {
+    width: 180%;
+}
+
+.M-youtube {
+    margin: 0 10% 0 0;
+}
+
+.M-twitter{
+    margin: 0 10% 0 10%;
+}
+
+.M-facebook{
+    margin: 0 10% 0 10%;
+}
+
+.M-cafe{
+    margin: 0 0 0 10%;
+}
+
+.M-add {
+    color: aliceblue;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.M-number {
+    color: aliceblue;
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.M-call {
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.M-fax {
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.M-en {
+    color: aliceblue;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.M-E_comp {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.M-E_comp img{
+    width: 80%;
 }
 
 
