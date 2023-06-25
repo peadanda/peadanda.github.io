@@ -35,7 +35,6 @@ header 영역 - 로고, 메인메뉴
     display: inline-flex;
     position: absolute;
     justify-content: space-evenly;
-    color: aliceblue;
     font-family: 'CookieRun-Regular';
     top: 55px;
     left: 0;
@@ -47,13 +46,13 @@ header 영역 - 로고, 메인메뉴
 .game {
     flex-wrap: nowrap;
     font-size: 15px;
-    margin-top: 5%;    
+    margin-top: 4%;    
 }
 
 .character {
     flex-wrap: nowrap;
     font-size: 15px;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 .iogo {
@@ -65,13 +64,13 @@ header 영역 - 로고, 메인메뉴
 .notice {
     flex-wrap: nowrap;
     font-size: 15px;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 .company {
     flex-wrap: nowrap;
     font-size: 15px;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 .title a {
@@ -90,6 +89,7 @@ main 영역 - 회사 정보들
 
 .mid {
     position: relative;
+    font-family: 'CookieRun-Regular';
     /* top: 285px; */
     left: 0;
     width: 100%;
@@ -394,6 +394,7 @@ input[type="checkbox"]{
 
 .wrapper{
     position: fixed;
+    font-family: 'CookieRun-Regular';
     top: 0;
     right: -100%;
     height: 100%;
@@ -598,30 +599,29 @@ mobile Information 영역 - sns 링크, 주소, 회사 로고
 
 .M-add {
     color: aliceblue;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-bottom: 10px;
 }
 
 .M-number {
     color: aliceblue;
-    font-size: 18px;
     display: flex;
     margin-bottom: 10px;
 }
 
 .M-call {
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin-right: 10px;
 }
 
 .M-fax {
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin-left: 10px;
 }
 
 .M-en {
     color: aliceblue;
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin-bottom: 10px;
 }
 
@@ -629,11 +629,11 @@ mobile Information 영역 - sns 링크, 주소, 회사 로고
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-left: 10%;
+    margin-left: 13%;
 }
 
 .M-E_comp img{
-    width: 80%;
+    width: 75%;
 }
 
 
